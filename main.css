@@ -1,0 +1,232 @@
+*{
+    font-family: poppins,vazir;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    direction: ltr;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(135deg, #222f3e, #1e272e);
+    color: #ecf0f1;
+}
+
+.header{
+    border-radius: 40px;
+    padding: 20px 0px;
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    display: flex;
+    box-shadow: 0px 10px 30px rgba(44, 62, 80, 0.3);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-right a{
+    color: #ecf0f1;
+    position: relative;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.header-right a:hover {
+    color: #e74c3c;
+    transform: translateY(-2px);
+}
+
+.header-right a::after {
+    content: '  ';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e74c3c;
+    transition: width 0.3s ease;
+}
+
+.header-right a:hover::after {
+    width: 100%;
+}
+
+.header-right{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    font-size: larger;
+}
+
+.logo-header{
+    border-radius: 150px;
+    box-shadow: 0px 0px 20px #e74c3c;
+    width: 60px;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.logo-header:hover {
+    transform: rotate(360deg);
+}
+
+h1{
+    text-align: center;
+}
+section{
+    background-color: #34495e;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px #2c3e50;
+    padding: 30px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    z-index:1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    background: radial-gradient(circle, rgba(231, 76, 60, 0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #e74c3c;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+}
+
+.profile-img:hover {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 15px 40px rgba(231, 76, 60, 0.5);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    background: linear-gradient(45deg, #e74c3c, #f39c12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInUp 1s ease;
+}
+
+.subtitle {
+    color: #95a5a6;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.3s backwards;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #e74c3c, #f39c12);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(231, 76, 60, 0.1);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(231, 76, 60, 0.5);
+    box-shadow: 0 10px 20px rgba(231, 76, 60, 0.2);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #e74c3c;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover i {
+    transform: scale(1.1);
+}
+
+h2 {
+    color: #e74c3c;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to right, #e74c3c, transparent);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
