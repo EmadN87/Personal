@@ -1,6 +1,6 @@
-# Emad's Personal Website
+# Personal Website
 
-This is a simple and clean personal portfolio website built using **HTML**, **CSS**, and a little **FontAwesome** for icons. The project is responsive and styled with a modern gradient theme. It's a great starter portfolio for showcasing front-end development skills.
+This is my personal website showcasing my skills and contact information.
 
 ## 🔗 Live Demo
 
@@ -9,12 +9,29 @@ You can view the website live via GitHub Pages here:
 
 ## 💡 Features
 
-- Responsive layout
-- Smooth hover effects and transitions
-- Social media links (GitHub, Twitter, Telegram)
-- Skill section with icons
-- Custom profile image with animation
-- Clean and animated header
+- Responsive design for all devices (mobile, tablet, desktop)
+- Skills section with animated cards
+- Contact section with social media links
+- Smooth animations and transitions
+- Modern glassmorphism UI design
+
+## Breakpoints
+
+- Mobile: < 480px
+  - Single column skills layout
+  - Smaller fonts and spacing
+  - Vertical social buttons
+
+- Tablet: < 768px
+  - Two column skills layout
+  - Centered navigation
+  - Reduced header size
+  - Vertical social buttons
+
+- Desktop: > 768px
+  - Multi-column skills layout
+  - Horizontal navigation
+  - Full-size components
 
 ## 📁 File Structure
 
