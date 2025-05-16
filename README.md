@@ -5,7 +5,7 @@ This is my personal website showcasing my skills and contact information.
 ## 🔗 Live Demo
 
 You can view the website live via GitHub Pages here:  
-👉 [https://fakes1011.github.io/Personal](https://fakes1011.github.io/Personal/)
+👉 [https://emadn87.github.io/Personal](https://emadn87.github.io/Personal/)
 
 ## 💡 Features
 
