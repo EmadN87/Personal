@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>emad</title>
-        <link rel="icon" type="image/png" href="/images/emad.png">
+        <link rel="icon" type="image/png" href="/images/emad.png" />
         <link
             href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css"
             rel="stylesheet"
@@ -14,14 +14,18 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/simple-icons-font@v5/font/simple-icons.min.css"
+        />
         <link rel="stylesheet" href="main.css" />
         <link rel="stylesheet" href="responsive.css" />
     </head>
     <body>
         <header class="header">
             <nav class="header-right">
-                <a href="#hero">Home</a>
                 <a href="#skills">Skills</a>
+                <a href="#Projects">Projects</a>
                 <a href="#Contact">Contact</a>
             </nav>
             <span class="header-left">
@@ -38,6 +42,42 @@
                 </div>
             </section>
 
+            <section class="projects">
+                <h2 style="margin-bottom: 10px;">My projects</h2>
+                <div class="project">
+                    <article>
+                        <h3>To-Do List</h3>
+                        <p>This project is a simple To-Do List built using HTML, CSS, and JavaScript. You can easily add, mark as done, or remove your tasks.</p>
+                        <a class="btn-p" href="https://to-do-emad.netlify.app/" target="_blank">Go to live demo</a>
+                    </article>
+                    <img src="images/to-do-list.png" alt="to-do">
+                </div>
+                <div class="project">
+                    <article>
+                        <h3>Shop</h3>
+                        <p>This project is a modern and responsive frontend template for an e-commerce website specializing in audio equipment. It's built using HTML, Tailwind CSS, and a bit of JavaScript for basic interactions like the mobile menu.</p>
+                        <a class="btn-p" href="https://shop-audio.netlify.app/" target="_blank">Go to live demo</a>
+                    </article>
+                    <img src="images/shop-site.png" alt="to-do">
+                </div>
+                <div class="project">
+                    <article>
+                        <h3>Music Website Player</h3>
+                        <p>A simple and elegant web page that allows users to play and pause a predefined song. This project is built using pure HTML, CSS, and JavaScript, utilizing Font Awesome for icons and Google Fonts for typography.</p>
+                        <a class="btn-p" href="https://music-emad.netlify.app/" target="_blank">Go to live demo</a>
+                    </article>
+                    <img id="music" src="images/music-player.png" alt="to-do">
+                </div>
+                <div class="project">
+                    <article>
+                        <h3>Simple Resume Template</h3>
+                        <p>This is a clean and minimal resume template built using HTML and CSS. It's designed to be lightweight, easy to customize, and ideal for showcasing your personal information, skills, education, and work experience.</p>
+                        <a class="btn-p" href="https://roadmap-emad.netlify.app/" target="_blank">Go to live demo</a>
+                    </article>
+                    <img id="resume" src="images/Resume.png" alt="to-do">
+                </div>
+            </section>
+
             <section id="skills" class="skills">
                 <h2>My skills</h2>
                 <div class="skills-container">
@@ -48,6 +88,10 @@
                     <div class="skill-card">
                         <i class="fab fa-css3-alt"></i>
                         <h3>CSS</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i id="tailwind" class="si si-tailwindcss"></i>
+                        <h3 id="tail">Tailwind CSS</h3>
                     </div>
                     <div class="skill-card">
                         <i class="fab fa-js"></i>
