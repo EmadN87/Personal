@@ -60,17 +60,6 @@ Showcases your technical skills (HTML, CSS, JS, Git) with beautiful icons and ef
 ### 📱 Contact
 Includes buttons to connect via GitHub, Twitter (X), and Telegram.
 
-## 🛠️ How to Run Locally
-
-1. Clone the repo:
-```bash
-git clone https://github.com/fakes1011/REPO_NAME.git
-```
-
-2. Open `index.html` in your browser.
-
----
-
 ## 🙌 Credits
 
 - Fonts by [Vazir Font](https://rastikerdar.github.io/vazir-font/)
