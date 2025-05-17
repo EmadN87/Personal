@@ -229,7 +229,7 @@ article{
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* تغییر به 3 ستون ثابت */
     gap: 20px;
     padding: 20px;
 }
@@ -238,11 +238,17 @@ article{
     background: linear-gradient(135deg, #34495e, #2c3e50);
     border-radius: 15px;
     padding: 20px;
+    flex-flow: column;
+    display: flex;
     text-align: center;
     transition: all 0.3s ease;
     border: 1px solid rgba(231, 76, 60, 0.1);
+    justify-content: center;    
 }
 
+.skill-card h3{
+    font-size: 16px;
+}
 .skill-card:hover {
     transform: translateY(-5px);
     border-color: rgba(231, 76, 60, 0.5);
@@ -251,9 +257,10 @@ article{
 
 .skill-card i {
     font-size: 3rem;
-    margin-bottom: 10px;
     color: #e74c3c;
     transition: transform 0.3s ease;
+    position: relative;
+    bottom: 10px;
 }
 
 #tailwind {
