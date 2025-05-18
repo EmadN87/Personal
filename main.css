@@ -178,9 +178,8 @@ section {
     box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
 }
 
-article{
-    margin-left: 50px;
-    margin-bottom: 50px;
+article {
+    margin: 2em 0 50px 50px;
 }
 
 .project img {
@@ -190,7 +189,7 @@ article{
     box-shadow: 0px 5px 15px rgba(52, 38, 87, 0.7);
     transform: rotate(5deg);
     margin-right: 50px;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project img:hover {
@@ -243,10 +242,10 @@ article{
     text-align: center;
     transition: all 0.3s ease;
     border: 1px solid rgba(231, 76, 60, 0.1);
-    justify-content: center;    
+    justify-content: center;
 }
 
-.skill-card h3{
+.skill-card h3 {
     font-size: 16px;
 }
 .skill-card:hover {
