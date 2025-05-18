@@ -38,8 +38,9 @@ You can view the website live via GitHub Pages here:
 ```
 ├── index.html
 ├── main.css
+├── responsive.css
 ├── images/
-│   └── emad.png
+│   └── *.png
 ```
 
 ## 🚀 Technologies Used
@@ -48,17 +49,6 @@ You can view the website live via GitHub Pages here:
 - **CSS3**
 - **FontAwesome**
 - **Vazir & Poppins Fonts**
-
-## 👨‍💻 Sections Overview
-
-### 🏠 Home
-Displays profile picture, name, and title with a smooth animated intro.
-
-### 💼 Skills
-Showcases your technical skills (HTML, CSS, JS, Git) with beautiful icons and effects.
-
-### 📱 Contact
-Includes buttons to connect via GitHub, Twitter (X), and Telegram.
 
 ## 🙌 Credits
 
