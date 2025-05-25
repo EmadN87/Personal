@@ -40,7 +40,7 @@ You can view the website live via GitHub Pages here:
 ├── main.css
 ├── responsive.css
 ├── images/
-│   └── *.png
+    └── *.png
 ```
 
 ## 🚀 Technologies Used
