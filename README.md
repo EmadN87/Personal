@@ -11,7 +11,7 @@
 ## 🔗 Live Demo
 
 You can view the website live via GitHub Pages here:  
-👉 [https://emadn87.github.io/Personal](https://emadn87.github.io/Personal/)
+👉 [Click Me](https://emadn87.github.io/Personal/)
 
 <hr style="height:1px;border:none;color:#ccc;background-color:#ccc;">
 
