@@ -201,6 +201,15 @@ article {
     font-size: 1.2rem;
     margin-bottom: 30px;
     animation: fadeInUp 1s ease 0.3s backwards;
+    display: inline-block;
+    position: relative;
+}
+
+.subtitle::after {
+    content: '|';
+    position: absolute;
+    right: -8px;
+    animation: blink 0.7s infinite;
 }
 
 .social-links {
@@ -228,7 +237,7 @@ article {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* تغییر به 3 ستون ثابت */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 }
@@ -293,22 +302,63 @@ h2::after {
     background: linear-gradient(to right, #e74c3c, transparent);
 }
 
+.scroll-top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    transform: scale(1.1) translateY(0);
+}
+
 @keyframes rotate {
-    from {
+    0% {
         transform: rotate(0deg);
     }
-    to {
+    100% {
         transform: rotate(360deg);
     }
 }
 
 @keyframes fadeInUp {
-    from {
+    0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(1.25rem);
     }
-    to {
+    100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
