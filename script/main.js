@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (index < textToType.length) {
             subtitleElement.textContent += textToType.charAt(index);
             index++;
-            setTimeout(type, 200);
+            setTimeout(type, 150);
         }
     }
     type();
