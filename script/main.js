@@ -1,31 +1,37 @@
-const scrollTopBtn = document.querySelector('#scrollTopBtn');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 600) {
-        scrollTopBtn.classList.add('show');
-    } else {
-        scrollTopBtn.classList.remove('show');
-    }
-});
-
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-    });
-});
-
 document.addEventListener('DOMContentLoaded', () => {
+    // عنصری که متن در آن نمایش داده می‌شود
     const subtitleElement = document.querySelector('.subtitle');
-    const textToType = "Front end developer";
-    let index = 0;
-    subtitleElement.textContent = ''; 
-    const type = () => {
-        if (index < textToType.length) {
-            subtitleElement.textContent += textToType.charAt(index);
-            index++;
-            setTimeout(type, 150);
+    const phrases = [
+        "Front end developer",
+        "UI/UX Enthusiast",
+        "Lifelong Learner"
+    ];
+    let phraseIndex = 0; 
+    let charIndex = 0;   
+    let isDeleting = false; 
+    const typingSpeed = 150;
+    const deletingSpeed = 75;
+    const pauseDuration = 2000; 
+
+    function typeAnimationLoop() {
+        const currentPhrase = phrases[phraseIndex];
+        if (isDeleting) {
+            charIndex--;
+        } else {
+            charIndex++;
         }
+        subtitleElement.textContent = currentPhrase.substring(0, charIndex);
+        if (!isDeleting && charIndex === currentPhrase.length) {
+            isDeleting = true;
+            setTimeout(typeAnimationLoop, pauseDuration);
+            return;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+        
+        const speed = isDeleting ? deletingSpeed : typingSpeed;
+        setTimeout(typeAnimationLoop, speed);
     }
-    type();
+    typeAnimationLoop();
 });
