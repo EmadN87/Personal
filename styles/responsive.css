@@ -1,8 +1,15 @@
+@media (max-width: 1000px) {
+
+    .project img {
+        width: 47%;
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        padding: 10px;
-        margin: 10px;
     }
 
     .header-right {
