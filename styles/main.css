@@ -238,29 +238,24 @@ article {
 .skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
 }
 
 .skill-card {
-    background: linear-gradient(135deg, #34495e, #2c3e50);
     border-radius: 15px;
-    padding: 20px;
+    padding: 24px;
     flex-flow: column;
     display: flex;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid rgba(231, 76, 60, 0.1);
     justify-content: center;
+    animation: floatAnimation 4s ease-in-out infinite;
+    border-color: rgba(231, 76, 60, 0.2);
 }
 
 .skill-card h3 {
     font-size: 16px;
-}
-.skill-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(231, 76, 60, 0.5);
-    box-shadow: 0 10px 20px rgba(231, 76, 60, 0.2);
 }
 
 .skill-card i {
@@ -269,6 +264,12 @@ article {
     transition: transform 0.3s ease;
     position: relative;
     bottom: 10px;
+    filter: drop-shadow(0 0 10px rgba(231, 76, 60, 0.8));
+    transition: filter 0.4s ease;
+}
+
+.skill-card:hover i {
+    filter: drop-shadow(0 0 12px rgba(231, 76, 60, 1));
 }
 
 #tailwind {
@@ -279,10 +280,6 @@ article {
 #tail {
     position: relative;
     bottom: 5px;
-}
-
-.skill-card:hover i {
-    transform: scale(1.1);
 }
 
 h2 {
@@ -361,4 +358,33 @@ h2::after {
     100% {
         opacity: 1;
     }
+}
+
+@keyframes floatAnimation {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.skill-card:nth-child(1) {
+    animation-delay: 0s;
+}
+.skill-card:nth-child(2) {
+    animation-delay: -0.5s;
+}
+.skill-card:nth-child(3) {
+    animation-delay: 1s;
+}
+.skill-card:nth-child(4) {
+    animation-delay: -1.5s;
+}
+.skill-card:nth-child(5) {
+    animation-delay: -2s;
+}
+.skill-card:nth-child(6) {
+    animation-delay: -2.5s;
 }
