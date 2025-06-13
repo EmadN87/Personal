@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  A modern and responsive personal portfolio website showcasing my skills and projects. Built with clean and maintainable HTML5 and CSS3, featuring a glassmorphism design style and smooth animations.
+  A modern and responsive personal portfolio website showcasing my skills and projects. Built with clean and maintainable HTML5, CSS3, and JavaScript, featuring a glassmorphism design style, smooth animations, and a focus on frontend technologies.
 </p>
 
 <hr style="height:1px;border:none;color:#ccc;background-color:#ccc;">
@@ -40,15 +40,18 @@ You can view the website live via GitHub Pages here:
 
 ## 🛠️ Technologies Used
 
-| Technology    | Description                              |
-| ------------- | ---------------------------------------- |
-| HTML5         | Semantic markup and structure            |
-| CSS3         | Styling and animations                   |
-| JavaScript   | Interactive features and animations       |
-| FontAwesome  | Icons and visual elements                |
-| Google Fonts | Typography with Poppins font             |
-| Vazir Font   | Persian/Arabic typography                |
-| Simple Icons | Additional icon set for skills section   |
+| Technology      | Description                                         |
+| --------------- | --------------------------------------------------- |
+| HTML5           | Semantic markup and structure                       |
+| CSS3            | Styling, animations, and responsive design          |
+| JavaScript      | Interactive features and animations                 |
+| Tailwind CSS    | Utility-first CSS framework (used in Shop project)  |
+| FontAwesome     | Icons and visual elements                           |
+| Simple Icons    | Additional icon set for skills section              |
+| Google Fonts    | Typography with Poppins font                        |
+| Vazir Font      | Persian/Arabic typography                           |
+| Adobe Photoshop | Graphics and image editing (for assets)             |
+| GIT             | Version control                                     |
 
 <hr style="height:1px;border:none;color:#ccc;background-color:#ccc;">
 
@@ -68,7 +71,8 @@ You can view the website live via GitHub Pages here:
 │   ├── to-do-list.png
 │   ├── shop-site.png
 │   ├── music-player.png
-│   └── Resume.png
+│   ├── Resume.png
+│   └── form.png
 └── LICENSE
   </pre>
 </details>
@@ -87,9 +91,9 @@ You can view the website live via GitHub Pages here:
 ## 🙌 Credits
 
 - Fonts by [Vazir Font](https://rastikerdar.github.io/vazir-font/)
-- Icons by [FontAwesome](https://fontawesome.com)
+- Icons by [FontAwesome](https://fontawesome.com) & [Simple Icons](https://simpleicons.org/)
 - Typography by [Google Fonts](https://fonts.google.com/)
-- Additional icons by [Simple Icons](https://simpleicons.org/)
+- Images and graphics by Emad
 
 <hr style="height:1px;border:none;color:#ccc;background-color:#ccc;">
 
@@ -102,4 +106,4 @@ Follow me on [GitHub](https://github.com/emadn87) | [Twitter](https://x.com/emad
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
