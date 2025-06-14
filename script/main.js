@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // عنصری که متن در آن نمایش داده می‌شود
     const subtitleElement = document.querySelector('.subtitle');
     const phrases = [
-        "Front end developer",
-        "UI/UX Enthusiast",
-        "Lifelong Learner"
+        'Front end developer',
+        'UI/UX Enthusiast',
+        'Lifelong Learner',
     ];
-    let phraseIndex = 0; 
-    let charIndex = 0;   
-    let isDeleting = false; 
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
     const typingSpeed = 150;
     const deletingSpeed = 75;
-    const pauseDuration = 2000; 
+    const pauseDuration = 2000;
 
     function typeAnimationLoop() {
         const currentPhrase = phrases[phraseIndex];
@@ -29,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isDeleting = false;
             phraseIndex = (phraseIndex + 1) % phrases.length;
         }
-        
+
         const speed = isDeleting ? deletingSpeed : typingSpeed;
         setTimeout(typeAnimationLoop, speed);
     }
